@@ -1,0 +1,53 @@
+
+GET http://localhost:3005/products/
+
+###
+POST http://localhost:3005/products
+Content-Type: application/json
+
+{
+    "name":"test",
+    "price" :50000
+}
+
+
+### Get
+GET http://localhost:3005/products/test5
+### Update
+PATCH  http://localhost:3005/products/64f899f64ebd812ecc1843ab
+Content-Type: application/json
+
+{
+    "name":"updated",
+    "price" :10000
+}
+###delete
+DELETE  http://localhost:3005/products/test2
+
+##tst
+
+GET http://localhost:3005/test?name=test&price=10
+
+###
+
+POST http://localhost:3005/test
+Content-Type: application/json
+
+{
+    "name":"test2",
+    "id" :10
+}
+###
+POST http://localhost:3005/test
+Content-Type: application/x-www-form-urlencoded
+
+name=test&price=50&school=xyz
+
+
+###
+
+
+POST http://localhost:3005/test
+Content-Type: application/x-www-form-urlencoded
+
+name=test&price=50
