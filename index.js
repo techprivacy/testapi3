@@ -8,8 +8,9 @@ mongoose.connect(
 );
 
 const ProductRoute =require('./Routes/Product.route')
+const UserRoute=require('./Routes/User.route')
 
-
+app.use('/user',UserRoute)
 app.use("/products", ProductRoute);
 
 app.use((req, res) => {

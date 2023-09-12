@@ -1,27 +1,39 @@
 
+POST http://localhost:3005/user
+Content-Type: application/json
+{
+    "username":"Yogesh",
+    "email" :"yogesh@learnandbuild.in",
+    "password" : "Hello@123"
+}
+
+
+
+
+###
 GET http://localhost:3005/products/
 
 ###
-POST http://localhost:3005/products
+POST https://testapi3.vercel.app/products/
 Content-Type: application/json
 
 {
-    "name":"Xyz",
-    "price" :5000
+    "name":"One Plus 11R",
+    "price" :70000
 }
 
 ###
-DELETE http://localhost:3005/products/Xyz
+DELETE https://testapi3.vercel.app/products/64ff2c12664dfcf39aa54f5a
 
 
 ### Get
 GET http://localhost:3005/products/64ff2c33664dfcf39aa54f60
 ### Update
-PATCH  http://localhost:3005/products/64ff2c33664dfcf39aa54f60
+PATCH  https://testapi3.vercel.app/products/64ff2c33664dfcf39aa54f60
 Content-Type: application/json
 
 {
-    "name":"Xyz updated 2"
+    "name":"One PlusNord"
 }
 
 
