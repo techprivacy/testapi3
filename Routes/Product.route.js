@@ -25,11 +25,12 @@ prouter.get("/", async (req, res) => {
 prouter.get("/:name", async (req, res) => {
   const pname = req.params.name;
   try {
-    const prodcut = await Product.findOne({name:pname});
+    const prodcut = await Product.findOne({ name: pname });
     res.send(prodcut);
   } catch (error) {
     console.log("Error");
   }
 });
+
 
 module.exports = prouter;
