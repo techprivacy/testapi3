@@ -6,21 +6,28 @@ POST http://localhost:3005/products
 Content-Type: application/json
 
 {
-    "name":"test",
-    "price" :50000
+    "name":"Xyz",
+    "price" :5000
 }
+
+###
+DELETE http://localhost:3005/products/Xyz
 
 
 ### Get
-GET http://localhost:3005/products/test5
+GET http://localhost:3005/products/64ff2c33664dfcf39aa54f60
 ### Update
-PATCH  http://localhost:3005/products/64f899f64ebd812ecc1843ab
+PATCH  http://localhost:3005/products/64ff2c33664dfcf39aa54f60
 Content-Type: application/json
 
 {
-    "name":"updated",
-    "price" :10000
+    "name":"Xyz updated 2"
 }
+
+
+
+
+
 ###delete
 DELETE  http://localhost:3005/products/test2
 
