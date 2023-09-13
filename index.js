@@ -17,6 +17,6 @@ app.use((req, res) => {
   res.status = 404;
   res.send({ error: "not found" });
 });
-app.listen(3005, () => {
+app.listen(3004, () => {
   console.log("server started");
 });

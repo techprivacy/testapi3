@@ -1,10 +1,11 @@
 
-POST http://localhost:3005/user
+POST http://localhost:3004/user
 Content-Type: application/json
+
 {
-    "username":"Yogesh",
-    "email" :"yogesh@learnandbuild.in",
-    "password" : "Hello@123"
+    "username":"Yogesh5",
+    "email":"yogesh@learnandbuild5.in",
+    "password":"Hello@123"
 }
 
 
